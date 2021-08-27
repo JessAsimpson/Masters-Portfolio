@@ -42,69 +42,40 @@
 // // Finally, it is console logged out here using string template literals. 
 // console.log(The difference between ${todaysDate} and ${birthDay} is ${diffInDays} days.);
 
-// // hard coded below cannot be reused. 
-// withdraw 10_pounds
-// from 63846284
-// //  it should be this...
-// withdraw amount 
-// from accountnum
+// // // hard coded below cannot be reused. 
+// // withdraw 10_pounds
+// // from 63846284
+// // //  it should be this...
+// // withdraw amount 
+// // from accountnum
 
-// let is used to decalre the value and can be changed 
-// const is used to declare a value that cannot be changed 
-//  var this is a legacy commany now and no longer used in certain lines but like let
+// // let is used to decalre the value and can be changed 
+// // const is used to declare a value that cannot be changed 
+// //  var this is a legacy commany now and no longer used in certain lines but like let
 
-// data typles listed below 
-// strings = text 
-// booleons = true and false 
-// null = nothing 
-// undefined = data type that isnt determined
-// numbers = integers & decimals 
+// // data typles listed below 
+// // strings = text 
+// // booleons = true and false 
+// // null = nothing 
+// // undefined = data type that isnt determined
+// // numbers = integers & decimals 
 
-// //activity 1 on ifelse switch_______________________
-// age = '18'
-// country = 'UK'
+// //activity 4_______
+// let space1 = "x"
+// let space2 = "o"
+// let space3 = ""
+// let space4 = "x"
+// let space5 = "x"
+// let space6 = ""
+// let space7 = "o"
+// let space8 = ""
+// let space9 = ""
+// let grid = [ 
+// |      {space2}  |     {space2}
+//         |                 |
+// |     {space4}        {space5}
+//         |                  |
+// |      {space7}       {space8}
+// ]
 
-// // if (age==18){
-// //     console.log("Yes, I can serve you!");
-// // } else if(age <18) {
-// //     console.log("No, youre not old enough");
-// // }
-
-//activity 2___________
-
-// let pizzaTopping = "onions";
-// pizzaTopping = "pepperoni"
-// badTopping = "pinapple"
-
-// switch(pizzaTopping){
-//     case "onions":
-//     console.log("this is an important igredient for my pizza");
-//     break;
-//     case "pepperoni":
-//     console.log(`i dont mind having ${pizzaTopping} on my pizza`);
-//     break
-//     case "Pinapple":
-//     console.log(`adding ${badTopping} is criminal - urgh.`)
-// }
-// //activity 3 ________________
-
-// password = 'treetops'
-
-// if( password <8)
-// console.log("password too short");
-// else if (password >8);
-// console.log("password correct")
-//activity 3 stretch__________
-
-// function
-// num = '5';
-
-// if (num %5||3 ){
-// console.log ("this number is divisable by 5 or 3");
-// }
-// else if()
-// console.log("this number is not divisable by 5 or 3");
-
-
-
-//activity 4_______
+// console.log(grid)

@@ -42,8 +42,23 @@
 // // Finally, it is console logged out here using string template literals. 
 // console.log(The difference between ${todaysDate} and ${birthDay} is ${diffInDays} days.);
 
+// // hard coded below cannot be reused. 
+// withdraw 10_pounds
+// from 63846284
+// //  it should be this...
+// withdraw amount 
+// from accountnum
 
+// let is used to decalre the value and can be changed 
+// const is used to declare a value that cannot be changed 
+//  var this is a legacy commany now and no longer used in certain lines but like let
 
+// data typles listed below 
+// strings = text 
+// booleons = true and false 
+// null = nothing 
+// undefined = data type that isnt determined
+// numbers = integers & decimals 
 
 // //activity 1 on ifelse switch_______________________
 // age = '18'

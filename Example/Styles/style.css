@@ -1,0 +1,304 @@
+/* main header/name below */
+h1{
+    font-family: 'Rampart One', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    text-align: center
+}
+/* below hover and color element for name  */
+h1:hover{
+    color: lightpink;
+    font-size: 70px;
+
+}
+
+
+
+.profileimage{
+  width: 40px;
+  height: 330px;
+  padding-left: 40px;
+  padding-top: 12px;
+  display: flex;
+  border: lightcoral;
+  opacity: 1.0;
+  display: flex;
+  justify-content:right;
+  
+}
+
+  .right-bg{
+
+  }
+
+
+/* subheading  */
+#openingp{
+    
+   text-align: center;
+   font-family: 'Rampart One', cursive;
+   font-size:  45px;
+   color: white;
+   
+}
+
+#openingp:hover{
+  color: lightpink;
+    
+    font-size: 45px;
+}
+
+
+/* hamburgericon links and position */
+.bar1{
+  
+  
+}
+
+
+/* .Hamburgericon{
+   
+    cursor: pointer;
+    
+    content: ;
+    
+    
+  } */
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color:lightpink;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+      color: lightskyblue;
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+
+  /* to add javascript <script> to transform below
+
+  function myFunction(x) {
+  x.classList.toggle("change");
+} */
+ 
+#Contactlink{
+    font-family:monospace;
+    font-size: small;
+    font-style: oblique;
+}
+
+
+#indexBody{
+
+    background-color:rgb(255, 255, 255)
+}
+
+@import "bourbon";
+
+html {
+  font-family: sans-serif;
+  font-size: 13px;
+  
+}
+.container {
+  position: relative;
+  background: #f1f1f1;
+  margin: 70px auto;
+  width: 80%;
+  height: 500px;
+}
+.left-bg, .right-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  transition: .20s ease;
+  
+}
+.left-bg {
+  background-color: rgb(13, 84, 126);
+  left: 0;
+}
+.right-bg {
+  background-color:steelblue;
+  background-position: right;
+  right: 0;
+}
+.right-bg:before {
+  content: "J  S";
+  
+  font-weight: bold;
+  position: absolute;
+  background: lightpink;
+  text-align: center;
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 20px;
+  top: 150px;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+}
+.right-bg:after {
+  content: " ";
+  height: 280px;
+  width: 1px;
+  background-color: white;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20px;
+}
+.right-bg:after {
+  right: 0;
+}
+.left-bg:hover {
+  width: 60%;
+}
+.left-bg:hover + .right-bg {
+  width: 40%;
+}
+.right-bg:hover {
+  width: 60%;
+}
+.right-bg:hover + .left-bg {
+  width: 40%;
+}
+/* HAMBURGER ME MENU */
+:root {
+  --primColor: lightpink;
+  --secoColor: #ccc0f7; 
+  --cornerRad: 6px;
+}
+/* contact me design*/
+/* body {
+  background-color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+} */
+details {
+  margin: 40px;
+}
+summary {
+  writing-mode: vertical-lr;
+  text-align: center;
+  padding: 12px 10px;
+  width: 23px;
+  height: 17px;
+  background-color: var(--primColor);
+  border: 2px solid var(--secoColor);
+  border-radius: var(--cornerRad);
+  color: var(--secoColor);
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  transition: transform 200ms ease-in-out 0s;
+}
+summary::before,
+summary::after {
+  position: static;
+  top: 0;
+  left: 0;
+}
+summary::before {
+  content: "";
+}
+summary::after {
+  content: "III";
+  letter-spacing: -1px;
+}
+summary:hover {
+  transform: scale(1.1);
+}
+summary::marker {
+  font-size: 0;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+details[open] .menu {
+  animation-name: menuAnim;
+}
+details[open] summary::before {
+  content: "X";
+}
+details[open] summary::after {
+  content: "";
+}
+.menu {
+  height: 0;
+  width: fit-content;
+  border-radius: var(--cornerRad);
+  background-color: var(--primColor);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  animation: closeMenu 300ms ease-in-out forwards;
+}
+.menu a {
+  padding: 12px 24px;
+  margin: 0 16px;
+  color: var(--secoColor);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
+  transition: filter 200ms linear 0s;
+}
+.menu a:nth-of-type(1) {
+  padding-top: 24px;
+}
+.menu a:nth-last-of-type(1) {
+  border-bottom: none;
+}
+.menu a:hover {
+  filter: brightness(200%);
+}
+details::before {
+  content: "← Click This Button";
+  color: var(--secoColor);
+  position: absolute;
+  margin-left: 80px;
+  padding: 10px 10px;
+  opacity: 0.4;
+}
+details[open]::before {
+  animation: fadeMe 300ms linear forwards;
+}
+@keyframes menuAnim {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 312px;
+  }
+}
+@keyframes fadeMe {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}

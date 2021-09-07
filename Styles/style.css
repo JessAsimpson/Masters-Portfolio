@@ -1,7 +1,7 @@
 /* main header/name below */
 h1{
-    font-family: 'Rampart One', cursive;
-    color: rgb(255, 255, 255);
+  font-family: 'Playfair Display', serif;
+    color:#bfd8d1;
     font-size: 70px;
     display: -ms-flexbox;
     flex-wrap: wrap;
@@ -9,14 +9,25 @@ h1{
 }
 /* below hover and color element for name  */
 h1:hover{
-    color: lightpink;
+    color:#ee8080;
     font-size: 70px;
 
 }
 
+img{
+  border-radius: 50%;
+  height: 50%;
+  width: 50%;
+  padding-left: 70px;
+  display: flex;
+  
+  
+  
+}
 
 
-.profileimage{
+
+/* .profileimage{
   width: 40px;
   height: 330px;
   padding-left: 40px;
@@ -27,7 +38,7 @@ h1:hover{
   display: flex;
   justify-content:right;
   
-}
+} */
 
   .right-bg{
 
@@ -36,17 +47,16 @@ h1:hover{
 
 /* subheading  */
 #openingp{
-    
+  font-family: 'Prata', serif;
    text-align: center;
-   font-family: 'Rampart One', cursive;
-   font-size:  45px;
-   color: white;
+   color: #bfd8d1;
+   font-size:45px ;
    
 }
 
 #openingp:hover{
-  color: lightpink;
-    
+  color: #ee8080;
+    font-family: 
     font-size: 45px;
 }
 
@@ -111,7 +121,7 @@ h1:hover{
     background-color:rgb(255, 255, 255)
 }
 
-@import "bourbon";
+/* @import "bourbon"; */
 
 html {
   font-family: sans-serif;
@@ -134,11 +144,11 @@ html {
   
 }
 .left-bg {
-  background-color: rgb(13, 84, 126);
+  background-color: #2b374b;
   left: 0;
 }
 .right-bg {
-  background-color:steelblue;
+  background-color:#178a94;
   background-position: right;
   right: 0;
 }
@@ -147,7 +157,7 @@ html {
   
   font-weight: bold;
   position: absolute;
-  background: lightpink;
+  background: #ee8080;
   text-align: center;
   width: 70px;
   height: 30px;
@@ -183,122 +193,44 @@ html {
 .right-bg:hover + .left-bg {
   width: 40%;
 }
-/* HAMBURGER ME MENU */
-:root {
-  --primColor: lightpink;
-  --secoColor: #ccc0f7; 
-  --cornerRad: 6px;
+
+/* navbar design */
+body {
+box-sizing:border-box;
+margin: 20px;
+padding: 10px;
 }
-/* contact me design*/
-/* body {
-  background-color: rgb(255, 255, 255);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-} */
-details {
-  margin: 40px;
+
+#main-navbar {
+  font-size: 25px;
+  
+ 
 }
-summary {
-  writing-mode: vertical-lr;
+
+#main-navbar ul {
+  margin: 0;
+  padding: 0;
   text-align: center;
-  padding: 12px 10px;
-  width: 23px;
-  height: 17px;
-  background-color: var(--primColor);
-  border: 2px solid var(--secoColor);
-  border-radius: var(--cornerRad);
-  color: var(--secoColor);
-  cursor: pointer;
-  user-select: none;
-  outline: none;
-  transition: transform 200ms ease-in-out 0s;
 }
-summary::before,
-summary::after {
-  position: static;
-  top: 0;
-  left: 0;
+
+#main-navbar li {
+  display: inline-block;
+  padding: 10px 20px;
 }
-summary::before {
-  content: "";
-}
-summary::after {
-  content: "III";
-  letter-spacing: -1px;
-}
-summary:hover {
-  transform: scale(1.1);
-}
-summary::marker {
-  font-size: 0;
-}
-summary::-webkit-details-marker {
-  display: none;
-}
-details[open] .menu {
-  animation-name: menuAnim;
-}
-details[open] summary::before {
-  content: "X";
-}
-details[open] summary::after {
-  content: "";
-}
-.menu {
-  height: 0;
-  width: fit-content;
-  border-radius: var(--cornerRad);
-  background-color: var(--primColor);
-  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
-  margin-top: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-  animation: closeMenu 300ms ease-in-out forwards;
-}
-.menu a {
-  padding: 12px 24px;
-  margin: 0 16px;
-  color: var(--secoColor);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+
+#main-navbar li a {
   text-decoration: none;
-  text-align: center;
-  transition: filter 200ms linear 0s;
+  color:#2b374b;
+  font-family: 'Prata', serif;
 }
-.menu a:nth-of-type(1) {
-  padding-top: 24px;
+
+#main-navbar li a:hover {
+  padding-bottom: 3px;
+  color: #ee8080;
 }
-.menu a:nth-last-of-type(1) {
-  border-bottom: none;
-}
-.menu a:hover {
-  filter: brightness(200%);
-}
-details::before {
-  content: "← Click This Button";
-  color: var(--secoColor);
-  position: absolute;
-  margin-left: 80px;
-  padding: 10px 10px;
-  opacity: 0.4;
-}
-details[open]::before {
-  animation: fadeMe 300ms linear forwards;
-}
-@keyframes menuAnim {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 312px;
-  }
-}
-@keyframes fadeMe {
-  0% {
-    opacity: 0.4;
-  }
-  100% {
-    opacity: 0;
-  }
+
+
+#para3{
+  font-family: 'Prata', serif;
+  font-size: 20px;
 }
